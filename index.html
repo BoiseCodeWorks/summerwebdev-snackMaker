@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snack Maker</title>
+</head>
+
+<body>
+  <form class="" onsubmit="app.snackController.makeSnack(event)">
+    <label for="title">Title</label>
+    <input id="title" type="checkbox" rows="10" cols="10" name="title" value="" required>
+    <label for="description">Description</label>
+    <input id="description" type="text" name="description" value="">
+    <label for="price">Price</label>
+    <input id="price" type="text" name="price" value="">
+    <label for="quantity">Quantity</label>
+    <input id="quantity" type="text" name="quantity" value="">
+    <button type="submit" onclick="app.snackController.other()">click me</button>
+    <button type="reset">clear!</button>
+  </form>
+
+  <script src="service.js"></script>
+  <script src="controller.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
